@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="alex.css">
+		<title>Alex's Website || PLTW IED</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<meta property="og:title" content="Alex's Website" />
+		<meta property="og:image" content="splash.jpg" />
+		<script src="redirect.js"></script>
+		<script>
+		if (screen.width > 800) {
+				window.location = "http://www.amgutowski.com/pltwied.html";
+			}
+		</script>
+	</head>
+<body>
+		<div id="wrapper">
+			<div id="content">
+				<nav>
+					<a href="nav.html"><img src="menu.png" alt="menu button"></a>
+					<a href="index.html"><img src="logo.png" alt="logo" style="float:right; padding-right:10px;"></a>
+
+					<br>
+					<hr>
+				  	<a href="geometric.pdf"><button class="navbutton">Geometric Constructions</button></a>
+				  	<a href="isometric.pdf"><button class="navbutton">Orthographic Projections with Isometrics</button></a>
+				  	<a onclick="poly()"><button class="navbutton">3D drawings</button></a>
+				</nav>
+				<br>
+				<p>
+					This is my page on <a onclick="pltw()" style="color: blue;text-decoration: underline;">PLTW</a> (Project Lead The Way)
+					IED (Intro to Engineering and Design). IED was taught by
+					<a href="mailto:sartoris@salineschools.org">Doctor Steven Sartori</a>.
+				</p>
+		  	  <script>
+					function pltw() {
+						var redirect = confirm("You are leaving amgutowski.com and heading to a trusted external source.");
+						if (redirect == true) {
+							window.open("https://www.pltw.org", "_blank");
+						}
+					}
+				  function poly() {
+						var redirect = confirm("You are leaving amgutowski.com and heading to a trusted external source.");
+						if (redirect == true) {
+							window.open("https://poly.google.com/user/aWKcZCytsVk", "_blank");
+						}
+					}
+				</script>
+				<footer>
+					Copyright &copy; 2020 Alex Gutowski <br>
+					&copy; The appreviation "PLTW"is a trademark of <a onclick="pltw()">Project Lead The Way Inc.</a> <br>
+					<a href="mailto:alexgutowski@gmail.com">alexgutowski@gmail.com</a> <br>
+					All Rights Reserved
+			  </footer>
+			</div>
+		</div>
+</body>
+</html>

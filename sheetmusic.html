@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="alex.css">
+		<title>Alex's Website || Sheet Music</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<meta property="og:title" content="Alex's Website" />
+		<meta property="og:image" content="splash.jpg" />
+		<script src="redirect.js"></script>
+		<script>
+		if (screen.width > 800) {
+				window.location = "http://www.amgutowski.com/sheetmusic.html";
+			}
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="content">
+				<nav>
+
+					<a href="nav.html"><img src="menu.png" alt="menu button"></a>
+					<a href="index.html"><img src="logo.png" alt="logo" style="float:right; padding-right:10px;"></a>
+
+				</nav>
+				<button class="accordion">Dear Evan Hansen</button>
+				<div class="panel">
+  					<h4>Anybody Have A Map?</h4>
+				  <div class="viewoptions">
+						View Piano Sheet Music PDF &nbsp;
+						View Vocal Sheet Music PDF &nbsp;
+						View Guitar Chords Sheet Music PDF &nbsp; <br> <br>
+						Download Piano Sheet Music MUSICXML &nbsp;
+						Download Vocal Sheet Music MUSICXML &nbsp;
+						Download Guitar Chords Sheet Music MUSICXML &nbsp; <br> <br>
+						Listen to lead WAV &nbsp;
+						Listen to accompaniment WAV &nbsp; <br> <br>
+						View on Flat
+				  </div>
+					<br>
+					<br>
+					<h4>Waving Through A Window</h4>
+					<div class="viewoptions">
+						View Piano Sheet Music PDF &nbsp;
+						View Vocal Sheet Music PDF &nbsp;
+						View Guitar Chords Sheet Music PDF &nbsp; <br> <br>
+						Download Piano Sheet Music MUSICXML &nbsp;
+						Download Vocal Sheet Music MUSICXML &nbsp;
+						Download Guitar Chords Sheet Music MUSICXML &nbsp; <br> <br>
+						Listen to lead WAV &nbsp;
+						Listen to accompaniment WAV &nbsp; <br> <br>
+						View on Flat
+					</div>
+					<br>
+					<br>
+					<h4>For Forever</h4>
+					<div class="viewoptions">
+						<a href="sheetmusic/dearevanhansen/pdf/forforeverpiano.pdf">View Piano Sheet Music PDF</a> &nbsp;
+						View Vocal Sheet Music PDF &nbsp;
+						View Guitar Chords Sheet Music PDF &nbsp; <br>
+						<br>
+						Download Piano Sheet Music MUSICXML &nbsp;
+						Download Vocal Sheet Music MUSICXML &nbsp;
+						Download Guitar Chords Sheet Music MUSICXML &nbsp; <br> <br>
+						Listen to lead WAV &nbsp;
+						Listen to accompaniment WAV &nbsp; <br> <br>
+						View on Flat
+				  </div>
+				</div>
+				<button class="accordion">Traditional</button>
+				<div class="panel">
+  					<p></p>
+				</div>
+				<button class="accordion">Imagine Dragons - Evolve</button>
+				<div class="panel">
+  					<p></p>
+				</div>
+				<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+
+					for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function() {
+							/* Toggle between adding and removing the "active" class,
+    						to highlight the button that controls the panel */
+							this.classList.toggle("active");
+
+    						/* Toggle between hiding and showing the active panel */
+							var panel = this.nextElementSibling;
+							if (panel.style.display === "block") {
+								panel.style.display = "none";
+							} else {
+								panel.style.display = "block";
+							}
+						});
+					}
+					for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var panel = this.nextElementSibling;
+							if (panel.style.maxHeight) {
+								panel.style.maxHeight = null;
+							} else {
+								panel.style.maxHeight = panel.scrollHeight + "px";
+							}
+						});
+					}
+				</script>
+				<footer>
+					Copyright &copy; 2020 Alex Gutowski <br>
+					<a href="mailto:alexgutowski@gmail.com">alexgutowski@gmail.com</a> <br>
+					All Rights Reserved
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

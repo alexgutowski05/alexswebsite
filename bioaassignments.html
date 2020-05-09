@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="alex.css">
+		<title>Alex's Website || Biology A Assignments</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<meta property="og:title" content="Alex's Website" />
+		<meta property="og:image" content="splash.jpg" />
+		<script src="redirect.js"></script>
+		<script>
+		if (screen.width > 800) {
+				window.location = "http://www.amgutowski.com/bioaassignments.html";
+			}
+		</script>
+	</head>
+<body>
+		<div id="wrapper">
+			<div id="content">
+				<nav>
+
+					<a href="nav.html"><img src="menu.png" alt="menu button"></a>
+					<a href="index.html"><img src="logo.png" alt="logo" style="float:right; padding-right:10px;"></a>
+
+					<br>
+					<hr>
+					<a href="biology.html"><button class="navbutton">Biology Home</button></a>
+					<a href="bioa.html"><button class="navbutton">Biology A</button></a>
+					<a href="biob.html"><button class="navbutton">Biology B</button></a>
+					<br>
+					<hr>
+					<a href="bioa.html"><button class="navbutton">Biology A Home</button></a>
+					<a href="bioaassignments.html"><button class="navbutton">Biology A Assignments</button></a>
+					<a onclick="oneNote"><button class="navbutton">Biology A OneNote Notebook</button></a>
+				</nav>
+				<br>
+				<iframe src="https://salineschoolsorg-my.sharepoint.com/personal/gutowska_salinehornets_org/_layouts/15/Doc.aspx?sourcedoc={76a9086c-5189-467f-a29b-03ea4125608f}&amp;action=embedview&amp;wdStartOn=1" width="600px" height="500px" frameborder="0">This is an embedded <a onclick="microsoftOffice()">Microsoft Office</a> document, powered by <a onclick="office()">Office</a>.</iframe>
+				<br>
+				<br>
+				<iframe src="https://salineschoolsorg-my.sharepoint.com/personal/gutowska_salinehornets_org/_layouts/15/Doc.aspx?sourcedoc={602066fc-79ae-4300-a632-a56ded14a6a5}&amp;action=embedview&amp;wdStartOn=1" width="600px" height="500px" frameborder="0">This is an embedded <a onclick="microsoftOffice()">Microsoft Office</a> document, powered by <a onclick="office()">Office</a>.</iframe>
+				<script>
+					function oneNote {
+						var redirect = confirm("You are leaving amgutowski.com and heading to a trusted external source.")
+						if (redirect = true) {
+							window.open("https://salineschoolsorg-my.sharepoint.com/:o:/g/personal/gutowska_salinehornets_org/EhOg7zcOemtAvSwlbtSQocMBrT_dPdoOgdDiCfZCOnU9og?e=KtbxcP", "_blank");
+						}
+					}
+				</script>
+				<footer>
+					Copyright &copy; 2020 Alex Gutowski <br>
+					<a href="mailto:alexgutowski@gmail.com">alexgutowski@gmail.com</a> <br>
+					All Rights Reserved
+				</footer>
+			</div>
+		</div>
+</body>
+</html>

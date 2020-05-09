@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="alex.css">
+		<title>Alex's Website || COVID-19 Blog</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<meta property="og:title" content="Alex's Website" />
+		<meta property="og:image" content="splash.jpg" />
+		<script src="redirect.js"></script>
+		<script>
+		if (screen.width > 800) {
+				window.location = "http://www.amgutowski.com/covid.html";
+			}
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="content">
+				<nav>
+
+					<a href="nav.html"><img src="menu.png" alt="menu button"></a>
+					<a href="index.html"><img src="logo.png" alt="logo" style="float:right; padding-right:10px;"></a>
+
+				</nav>
+				<button class="accordion">April</button>
+				<div class="panel">
+  					<h4><a href="2020 4 2.html">Second</a></h4>
+					<h4><a href="2020 4 7.html">Seventh</a></h4>
+					<h4><a href="2020 4 14.html">Fourteenth</a></h4>
+					<h4><a href="2020 4 21.html">Twenty-First</a></h4>
+					<h4><a href="2020 4 29.html">Twenty-Ninth</a></h4>
+				</div>
+				<button class="accordion">May</button>
+				<div class="panel">
+  					<p></p>
+				</div>
+				<button class="accordion">June (yes i'm expecting this to go until June)</button>
+				<div class="panel">
+  					<p></p>
+				</div>
+				<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+
+					for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function() {
+							/* Toggle between adding and removing the "active" class,
+    						to highlight the button that controls the panel */
+							this.classList.toggle("active");
+
+    						/* Toggle between hiding and showing the active panel */
+							var panel = this.nextElementSibling;
+							if (panel.style.display === "block") {
+								panel.style.display = "none";
+							} else {
+								panel.style.display = "block";
+							}
+						});
+					}
+					for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var panel = this.nextElementSibling;
+							if (panel.style.maxHeight) {
+								panel.style.maxHeight = null;
+							} else {
+								panel.style.maxHeight = panel.scrollHeight + "px";
+							}
+						});
+					}
+				</script>
+				<footer>
+					Copyright &copy; 2020 Alex Gutowski <br>
+					<a href="mailto:alexgutowski@gmail.com">alexgutowski@gmail.com</a> <br>
+					All Rights Reserved
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

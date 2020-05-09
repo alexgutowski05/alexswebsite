@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="alex.css">
+		<title>Alex's Website</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<meta property="og:title" content="Alex's Website" />
+		<meta property="og:image" content="splash.jpg" />
+		<script src="redirect.js"></script>
+	</head>
+
+	<body>
+		<nav>
+				<a href="index.html"><img src="logo.png" alt="logo" height="100" width="100"></a>
+				<br>
+				<a href="index.html"><button class="navbutton">Home</button></a><br>
+				<button class="navbutton" onclick="sixthGrade()">6th Grade</button><br>
+				<button class="accordion">7th Grade</button>
+				<div class="panel">
+  					<a href="english7.html">ELA</a><br>
+    				<a href="geography.html">World Geography</a><br>
+    				<a href="science7.html">Science</a><br>
+					<a href="multimedia.html">Multimedia</a><br>
+					<a href="woods.html">Woodshop</a><br>
+					<a href="algebra1.html">Algebra 1</a><br>
+				</div><br>
+				<button class="accordion">8th Grade</button>
+				<div class="panel">
+  					<a href="multimedia2.html">Multimedia</a><br>
+    				<a href="woods2.html">Woodshop</a><br>
+    				<a href="amerhistory.html">American History</a><br>
+					<a href="geometry.html">Geometry</a><br>
+					<a href="english8.html">ELA</a><br>
+					<a href="science8.html">Science</a><br>
+				</div><br>
+				<button class="accordion">9th Grade</button>
+				<div class="panel">
+					<a href="algebra2.html">Honors Algebra 2</a><br>
+					<a href="english9.html">English 9</a><br>
+					<a href="vidprod.html">Video Production</a><br>
+					<a href="webdesign.html">Web Design</a><br>
+					<a href="biology.html">Biology</a><br>
+					<a href="worldhistory.html">World History</a><br>
+					<a href="pltwied.html">PLTW IED</a><br>
+    				<a href="photography.html">Photography</a><br>
+   			 		<a href="pe.html">PE</a><br>
+    				<a href="hchem.html">Honors Chemistry</a><br>
+					<a href="covid.html">COVID-19 Blog</a><br>
+				</div><br>
+				<button class="accordion">Social</button>
+				<div class="panel">
+					<a onclick="instagram()"><img class="social" src="instagram.png" alt="Instagram logo"></a><br>
+    				<a onclick="twitter()"><img class="social" src="twitter.png" alt="Twitter logo"></a><br>
+					<a onclick="youtube()"><img class="social" src="youtube.png" alt="YouTube logo"></a><br>
+					<a onclick="vimeo()"><img class="social" src="vimeo.png" alt="Vimeo logo"></a><br>
+				</div><br>
+				<a href="sheetmusic.html"><button class="navbutton">Sheet Music</button></a><br>
+				<button class="accordion">Legal Stuff</button>
+				<div class="panel">
+					<a href="copyright.html">Copyright Release</a><br>
+					<a href="coppa.html">COPPA</a>
+				</div>
+				<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+
+					for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function() {
+							/* Toggle between adding and removing the "active" class,
+    						to highlight the button that controls the panel */
+							this.classList.toggle("active");
+
+    						/* Toggle between hiding and showing the active panel */
+							var panel = this.nextElementSibling;
+							if (panel.style.display === "block") {
+								panel.style.display = "none";
+							} else {
+								panel.style.display = "block";
+							}
+						});
+					}
+					for (i = 0; i < acc.length; i++) {
+						acc[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var panel = this.nextElementSibling;
+							if (panel.style.maxHeight) {
+								panel.style.maxHeight = null;
+							} else {
+								panel.style.maxHeight = panel.scrollHeight + "px";
+							}
+						});
+					}
+				</script>
+		</nav>
+	</body>
+</html>

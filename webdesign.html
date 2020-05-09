@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="alex.css">
+		<title>Alex's Website || Web Design</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<meta property="og:title" content="Alex's Website" />
+		<meta property="og:image" content="splash.jpg" />
+		<script src="redirect.js"></script>
+		<script>
+		if (screen.width > 800) {
+				window.location = "http://www.amgutowski.com/webdesign.html";
+			}
+		</script>
+	</head>
+<body>
+		<div id="wrapper">
+			<div id="content">
+				<nav>
+
+					<a href="nav.html"><img src="menu.png" alt="menu button"></a>
+					<a href="index.html"><img src="logo.png" alt="logo" style="float:right; padding-right:10px;"></a>
+
+					<br>
+					<hr>
+					<a onclick="dearEvanHansen()"><button class="navbutton">Web Design A Final Project</button></a>
+					<a onclick="pcPartChooser()"><button class="navbutton">Web Design B Final Project</button></a>
+			</nav>
+				<br>
+				<p>
+					This is my page on Web Design. Both Web Design A and Web Design B were taught by
+					<a href="mailto:gillowd@salineschools.org">Dawn Gillow</a>.
+				</p>
+				<script>
+				function dearEvanHansen() {
+					var redirect = confirm("You are leaving amgutowski.com and heading to another webpage designed by Alex.");
+					if (redirect == true) {
+						window.open("https://www.dearevanhansenfilm.com", "_blank");
+					}
+				}
+
+				function pcPartChooser() {
+					var redirect = confirm("You are leaving amgutowski.com and heading to another webpage designed by Alex.");
+					if (redirect == true) {
+						window.open("https://pc-part-chooser.netlify.app", "_blank");
+					}
+				}
+				</script>
+				<footer>
+					Copyright &copy; 2020 Alex Gutowski <br>
+					<a href="mailto:alexgutowski@gmail.com">alexgutowski@gmail.com</a> <br>
+					All Rights Reserved
+				</footer>
+			</div>
+		</div>
+</body>
+</html>
