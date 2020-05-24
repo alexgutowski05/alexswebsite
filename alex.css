@@ -1,8 +1,7 @@
 body {
 	font-family: "Comic Sans MS", 'Marker Felt', sans-serif;
 	background-color: #000000;
-	min-width: 100px;
-	max-width: 800px;
+	width: 100px;
 	margin: auto;
 }
 
