@@ -1,5 +1,5 @@
 # alexswebsite
-This is the GitRepo that holds the code for my old website (https://archive.amgutowski.com).
+This is the GitRepo that holds the code for my website/portfolio (https://www.amgutowski.com).
 
 I am using Netlify to deploy my code.
 
