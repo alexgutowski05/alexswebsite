@@ -68,7 +68,7 @@ nav {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #000000;
+.dropdown-content a:hover {background-color: #e9000b;
 							color: #ffffff;}
 
 /* Show the dropdown menu on hover */
@@ -88,7 +88,7 @@ color: #ffffff;}
   font-style: normal;
 }
 .navbutton:hover {
-	background-color: #000000;
+	background-color: #e9000b;
 	color: #ffffff;
 }
 .navbutton a {
