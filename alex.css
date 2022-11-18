@@ -144,7 +144,7 @@ color: #ffffff;}
 							color: #ffffff;}
 
 /* Show the dropdown menu on hover */
-.idropdown:hover .idropdown-content {display: block;}
+.idropbtn .idropdown:hover .idropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .idropdown:hover .idropbtn {background-color: #e9000b;
