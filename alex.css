@@ -20,7 +20,7 @@ body {
 }
 
 nav {	
-	background-color: #000000;
+	background-color: #e9000b;
 	margin-top: 0px;
 	padding-bottom: 5px;
 }
@@ -30,7 +30,7 @@ nav {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #000000;
+  background-color: #e9000b;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -50,7 +50,7 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #000000;
+  background-color: #e9000b;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -78,7 +78,7 @@ nav {
 .dropdown:hover .dropbtn {background-color: #ffffff;
 color: black;}
 .navbutton {
-  background-color: #000000;
+  background-color: #e9000b;
   color: white;
   padding: 16px;
   font-size: 16px;
