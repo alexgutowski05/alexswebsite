@@ -30,7 +30,7 @@ nav {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #e9000b;
+  background-color: black;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -75,7 +75,7 @@ nav {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #000000;
+.dropdown:hover .dropbtn {background-color: #e9000b;
 color: #ffffff;}
 .navbutton {
   background-color: #e9000b;
