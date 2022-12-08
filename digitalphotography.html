@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="alex.css">
+		<title>Digital Photography || Alex's Portfolio</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://use.typekit.net/xxt7drw.css">
+		<meta property="og:title" content="Alex's Website" />
+		<meta property="og:image" content="splash.jpg" />
+		<script src="nav.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="content">
+				<nav>
+					<h1>Digital Photography</h1>
+					<div id="nav"></div>
+				</nav>
+				<p>
+					In my senior year, in the effort to take every single class taught by Mr. Bush, I decided to take Digital Photography. In 
+          Digital Photography we learn about photography cameras, photography composition types, how to edit photos using Adobe 
+          Lightroom and Adobe Photoshop, and tools to be a better photographer.
+				</p>
+        <p>
+          I enjoy photography because it's a way of expressing my creativity. I'm not super great at drawing, painting, or "traditional" 
+          art forms, so I feel like the only way for me to express that creativity is through digital media. I've been taking digital 
+          media classes since seventh grade, and I have loved every minute of it.
+				<p>
+					Check out some of my work below. Use the arrows at the right and left of each image to flip through the different photos for the different assignments.
+				</p>
+        <br>
+				<h4 id="assignment1">Assignment 1</h4>
+        		<div class="slideshow-container">
+  					<div class="mySlides1">
+    					<div class="numbertext">1 / 8</div>
+    					<img alt="A pack of Trident gum standing landscape oriented on a table." src="files/pictures/digitalphotography/assignment1/IMG_5376.jpg" style="width:100%">
+  					</div>
+  					<div class="mySlides1">
+    					<div class="numbertext">2 / 8</div>
+    					<img alt="A pack of Trident gum standing portrait oriented on a table." src="files/pictures/digitalphotography/assignment1/IMG_5380.jpg" style="width:100%">
+  					</div>
+					<div class="mySlides1">
+    					<div class="numbertext">3 / 8</div>
+    					<img alt="An open pack of Trident gun standing portrait oriented on a table with a structure of gum pieces in front of it." src="files/pictures/digitalphotography/assignment1/IMG_5390.jpg" style="width:100%">
+  					</div>
+					<div class="mySlides1">
+    					<div class="numbertext">4 / 8</div>
+    					<img alt="A pack of Trident gum laying down on a table" src="files/pictures/digitalphotography/assignment1/IMG_5404.jpg" style="width:100%">
+  					</div>
+					<div class="mySlides1">
+    					<div class="numbertext">5 / 8</div>
+    					<img alt="Dutch angle of a pack of Trident gum standing landscape oriented on a table" src="files/pictures/digitalphotography/assignment1/IMG_5408.JPG" style="width:100%">
+  					</div>
+					<div class="mySlides1">
+    					<div class="numbertext">6 / 8</div>
+    					<img alt="A model eating a stick of Trident gum" src="files/pictures/digitalphotography/assignment1/IMG_5422.jpg" style="width:100%">
+  					</div>
+					<div class="mySlides1">
+    					<div class="numbertext">7 / 8</div>
+    					<img alt="A model eating a stick of Trident gum" src="files/pictures/digitalphotography/assignment1/IMG_5426.jpg" style="width:100%">
+  					</div>
+					<div class="mySlides1">
+    					<div class="numbertext">8 / 8</div>
+    					<img alt="A pack of Trident gum standing landscape oriented on stool with dramatic lighting" src="files/pictures/digitalphotography/assignment1/IMG_5436.jpg" style="width:100%">
+  					</div>
+  					<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  					<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+				</div>
+        <div> 
+          These images have been scaled down for web optimization. For full quality images, email me at 
+          <a href="mailto:alexgutowski@gmail.com">alexgutowski@gmail.com</a>.
+        </div>
+			
+        
+        
+        
+        
+        
+        
+        
+				<script>
+					var slideIndex = [1,1,1,1];
+					var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
+					showSlides(1, 0);
+					showSlides(1, 1);
+					showSlides(1, 2);
+					showSlides(1, 3);
+
+					function plusSlides(n, no) {
+  						showSlides(slideIndex[no] += n, no);
+					}
+
+					function showSlides(n, no) {
+  						var i;
+						var x = document.getElementsByClassName(slideId[no]);
+  						if (n > x.length) {slideIndex[no] = 1}    
+						if (n < 1) {slideIndex[no] = x.length}
+						for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+						}
+						x[slideIndex[no]-1].style.display = "block";  
+					}
+				</script>
+				<br>
+				<br>
+				<a href="#content">Back to top</a>
+				<br>
+				<br>
+				<footer>
+					Copyright &copy; 2022 Alex Gutowski <br>
+					<a href="mailto:alexgutowski@gmail.com">alexgutowski@gmail.com</a> <br>
+					All Rights Reserved
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
