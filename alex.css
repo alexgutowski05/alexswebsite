@@ -31,6 +31,7 @@ nav {
 /* Dropdown Button */
 .dropbtn {
   background-color: black;
+  border-radius: 12px;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -79,6 +80,7 @@ nav {
 color: #ffffff;}
 .navbutton {
   background-color: #000000;
+  border-radius: 12px;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -103,7 +105,77 @@ color: #ffffff;}
 	padding-left: 30px;
 }
 
+.red {
+    background-color: #e9000b;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-radius: 25px;
+    margin: 2% 3%
+}
+.red iframe {
+    display: inline;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+.red a button {
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.videobutton {
+  background-color: #000000;
+  border-radius: 12px;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.videobutton:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+.videobutton a {
+	text-decoration: none;
+	color: white;
+}
+.videobutton a:hover {
+	color: black;
+}
+
+.topbutton {
+  background-color: #000000;
+  border-radius: 12px;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.topbutton:hover {
+	background-color: #e9000b;
+	color: #ffffff;
+}
+.topbutton a {
+	text-decoration: none;
+	color: white;
+}
+.topbutton a:hover {
+	color: white;
+}
+
+
 * {box-sizing:border-box}
+
+
+
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -182,21 +254,19 @@ color: #ffffff;}
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
 
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+
+
+
 nav h1{
 	color: white;
 	float: right;
