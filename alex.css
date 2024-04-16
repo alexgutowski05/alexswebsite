@@ -340,11 +340,11 @@ cite {
 /* contact form */
 input[type=text] {
 	width: 100%;
-  	padding: 12px 20px;
+  	padding: 12px 10px;
   	margin: 8px 0;
   	box-sizing: border-box;
 	border: 2px solid black;
-	border-radius: 10px;
+	border-radius: 20px;
 	background-color: white;
 	color: black;
 }
