@@ -343,12 +343,12 @@ input[type=text] {
   	padding: 12px 15px;
   	margin: 8px 0;
   	box-sizing: border-box;
-	border: 2px solid black;
+	border: 1px solid black;
 	border-radius: 20px;
 	background-color: white;
 	color: black;
 }
 
 input[type=text]:focus {
-  	border: 5px solid #e9000b;
+  	border: 2px solid #e9000b;
 }
