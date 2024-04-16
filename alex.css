@@ -348,3 +348,7 @@ input[type=text] {
 	background-color: white;
 	color: black;
 }
+
+input[type=text]:focus {
+  	border: 5px solid #e9000b;
+}
