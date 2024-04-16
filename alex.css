@@ -347,6 +347,9 @@ input[type=text] {
 	border-radius: 20px;
 	background-color: white;
 	color: black;
+	font-family: futura-pt, sans-serif;
+	font-weight: 500;
+	font-style: normal;
 }
 
 input[type=text]:focus {
@@ -363,8 +366,11 @@ textarea {
   	background-color: white;
 	color: black;
   	resize: none;
+	font-family: futura-pt, sans-serif;
+	font-weight: 500;
+	font-style: normal;
 }
 
 textarea:focus {
-	bprder: 2px solid #e9000b;
+	border: 2px solid #e9000b;
 }
